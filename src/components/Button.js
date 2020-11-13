@@ -3,11 +3,6 @@ import { connect } from 'react-redux';
 import { fetchAPI } from '../actions'
 
 class Button extends Component {
-  componentDidMount() {
-    const { getImage } = this.props;
-    getImage();
-  }
-
   render() {
     const { getImage } = this.props;
     return (
@@ -15,7 +10,7 @@ class Button extends Component {
         type="button"
         onClick= { () => getImage() }
       >
-        Click
+        Find a cat!
       </button>
     );
   }
