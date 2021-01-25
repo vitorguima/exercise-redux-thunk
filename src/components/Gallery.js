@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import defaultCat from '../images/detCat.gif'
+import defaultCat from '../images/detCat.gif';
 
 class Gallery extends Component {
   render() {
@@ -14,6 +14,12 @@ class Gallery extends Component {
     );
   }
 }
+
+Gallery.propTypes = {
+  imgPath: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  useDefaultImg: PropTypes.bool.isRequired,
+};
 
 const mapStateToProps = (state) => ({
   imgPath: state.gallery.imgURL.file,

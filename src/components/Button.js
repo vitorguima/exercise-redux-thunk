@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchAPI } from '../actions'
+import { fetchAPI } from '../actions';
 
 class Button extends Component {
   render() {
@@ -8,13 +8,17 @@ class Button extends Component {
     return (
       <button
         type="button"
-        onClick= { () => getImage() }
+        onClick={ () => getImage() }
       >
         Find a cat!
       </button>
     );
   }
 }
+
+Button.propTypes = {
+  getImage: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = (dispatch) => ({
   getImage: () => dispatch(fetchAPI()),
