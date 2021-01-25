@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import defaultCat from '../images/detCat.gif';
 
@@ -16,7 +17,7 @@ class Gallery extends Component {
 }
 
 Gallery.propTypes = {
-  imgPath: PropTypes.string.isRequired,
+  imgPath: PropTypes.string,
   isLoading: PropTypes.bool.isRequired,
   useDefaultImg: PropTypes.bool.isRequired,
 };
