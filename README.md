@@ -43,7 +43,7 @@ Para cada PR realize esse processo.
 
 #### Exercício 1
 
-Nesse exercício, focaremos apenas no desenvolvimento de uma **action assíncrona** e na implementação do `thunk` na `store`. O `reducer`, assim como os componentes da aplicação,
+Nesse exercício, utilizaremos [essa api](https://aws.random.cat/meow) para realizarmos nossas requisições. Vamos focar no desenvolvimento de uma **action assíncrona** e na implementação do `thunk` na `store`. O `reducer`, assim como os componentes da aplicação,
 já estão prontos. Desse modo, realizaremos modificações apenas nos arquivos `actions/index.js` e `store/index.js`.
 
 Nessa aplicação, temos dois componentes: 
