@@ -7,7 +7,6 @@ const INITIAL_STATE = {
 };
 
 function gallery(state = INITIAL_STATE, action) {
-  console.log(action)
   switch (action.type) {
   case REQUEST_API:
     return {

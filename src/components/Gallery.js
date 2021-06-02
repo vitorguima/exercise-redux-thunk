@@ -23,9 +23,9 @@ Gallery.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  imgPath: state.imgURL,
-  isLoading: state.isLoading,
-  useDefaultImg: state.defaultImg,
+  imgPath: state.gallery.imgURL.file,
+  isLoading: state.gallery.isLoading,
+  useDefaultImg: state.gallery.defaultImg,
 });
 
 export default connect(mapStateToProps)(Gallery);
