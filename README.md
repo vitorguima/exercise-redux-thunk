@@ -18,7 +18,7 @@ Verifique se a seguinte branch apareceu:
 - Cada branch dessas será um exercício.
 - Mude para a branch `exercise-one` com o comando `git checkout exercise-one`. É nessa branch que você realizará a solução para o exercício 1.
 
-**Atenção!** Você precisa mudar pra branch `exercise-one` para conseguir rodar o `npm start`.
+#### ⚠️ **Atenção!** Você precisa mudar pra branch `exercise-one` para conseguir rodar o `npm start`. ⚠️
 
 Observe o que deve ser feito nas instruções para cada exercício.
 
